@@ -1,0 +1,48 @@
+Il programma  permette di giocare a MasterMind o di
+far giocare  il computer. E' possibile scegliere se
+la soluzione  debba avere  tutti i  colori distinti
+oppure possa  avere anche  pió  colori  uguali,  in
+questo caso  il gioco  ä pió  difficile infatti  le
+possibili soluzioni aumentano.
+Ad ogni  tentativo di indovinare la soluzione viene
+visualizzato il numero di pioli che compaiono nella
+soluzione con  quel colore  e in quella posizione (
+giusti al  posto giusto  ) e il numero di pioli che
+compaiono nella soluzione con quel colore ma in una
+posizione differente ( giusti al posto errato ).
+QUANDO GIOCA IL COMPUTER.
+Viene chiesto  l'inserimento della soluzione che il
+computer  dovrÖ   indovinare.  In  computer  quindi
+genera una lista di tutte le possibili soluzioni ed
+esegue il  primo tentativo pescandone uno a caso in
+questa lista. Utilizzando l'informazione del numero
+di pioli  giusti al  posto giusto  e del  numero di
+pioli giusti  al posto sbagliato di quel tentativo,
+il  computer   elimina  dalla  lista  le  possibili
+soluzioni che  non sono  pió valide  e procede  col
+seguente  tentativo   pescandolo  dalle   rimanenti
+possibili soluzioni.  Per eliminare  una  possibile
+soluzione  dalla  lista  viene  fatto  il  seguente
+ragionamento :  si prende  una possibile  soluzione
+dalla lista  e si "finge" sia la soluzione cercata,
+per ogni  tentativo giÖ  effettuato dal computer si
+scrive il  numero di pioli giusti al posto giusto e
+il numero  di pioli  giusti al  posto sbagliato; se
+questi sono  uguali a  quelli  scritti  accanto  al
+tentativo   si   tiene   la   possibile   soluzione
+altrimenti la  si elimina.  Con questo metodo , 399
+volte  su   400  prima  del  settimo  tentativo  le
+possibili soluzioni si riducono ad una.
+QUANDO GIOCA UN GIOCATORE.
+Il computer  genera  una  soluzione  casuale  e  al
+giocatore viene chiesto di effettuare un tentativo.
+Accanto ad  ogni tentativo viene indicato il numero
+di pioli giusti al posto giusto, il numero di pioli
+giusti al  posto sbagliato e il numero di possibili
+soluzioni   restanti.   Per   tutti   i   tentativi
+successivi al primo viene indicato anche se in quel
+tentativo  non   si  ä   utilizzato  il   contenuto
+informativo  di   uno  dei   precedenti   tentativi
+basandosi  sullo  stesso  ragionamento  che  fa  il
+computer; se  cosç fosse significa che il tentativo
+fatto non era l'ottimo.
